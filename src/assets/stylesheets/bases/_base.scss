@@ -1,0 +1,25 @@
+//* 主要字體
+.font-en {
+  font-family: Inter, sans-serif;
+}
+.font-tw {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+//* 饅頭黑體 https://github.com/mant0u0/MantouSans
+.font-mantou {
+  font-family: "Mantou Sans", sans-serif;
+}
+
+.text-clip {
+  color: transparent;
+  background: linear-gradient(90deg, #e5793b 1.54%, #ff4185 97.86%);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+//* 背景色
+.bg-theme-2 {
+  background-color: #f7ece1;
+}

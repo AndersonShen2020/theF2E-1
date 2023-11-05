@@ -7,18 +7,49 @@
           <h4 class="mb-0">
             <RouterLink to="/">
               <img src="../assets/images/logo.svg" alt="logo" />
-              <span class="ms-2">喵立翰 Miao Li-Han</span>
+              <span class="ms-2 fw-bold text-primary">喵立翰 Miao Li-Han</span>
             </RouterLink>
           </h4>
           <ul
-            class="list-unstyled d-flex justify-content-center gap-4 mb-0 position-lg-static position-fixed bottom-0 start-50 translate-middle-lg-0 translate-middle-x bg-white w-lg-auto w-100"
+            class="list-unstyled d-flex justify-content-lg-center justify-content-around gap-4 mb-0 position-lg-static position-fixed bottom-0 start-50 translate-middle-lg-0 translate-middle-x bg-white w-lg-auto w-100 header-navbar"
           >
-            <li><a href="#1">候選人主張</a></li>
-            <li><a href="#2">最新活動</a></li>
-            <li><a href="#3">政策議題</a></li>
-            <li><a href="#4">小額捐款</a></li>
             <li>
-              <a href="#5"><span class="d-md-static d-none">民眾</span>服務信箱</a>
+              <a class="py-lg-5 px-lg-2 pt-3 pb-4 px-1 d-flex flex-lg-row flex-column align-items-center" href="#1">
+                <img class="img-logo mb-1 d-lg-none d-inline" src="../assets/images/icons/icon-user.svg" alt="user" />
+                候選人主張
+              </a>
+            </li>
+            <li>
+              <a class="py-lg-5 px-lg-2 pt-3 pb-4 px-1 d-flex flex-lg-row flex-column align-items-center" href="#2">
+                <img class="img-logo mb-1 d-lg-none d-inline" src="../assets/images/icons/icon-news.svg" alt="news" />
+                最新活動
+              </a>
+            </li>
+            <li>
+              <a class="py-lg-5 px-lg-2 pt-3 pb-4 px-1 d-flex flex-lg-row flex-column align-items-center" href="#3">
+                <img
+                  class="img-logo mb-1 d-lg-none d-inline"
+                  src="../assets/images/icons/icon-policy.svg"
+                  alt="policy"
+                />
+                政策議題
+              </a>
+            </li>
+            <li>
+              <a class="py-lg-5 px-lg-2 pt-3 pb-4 px-1 d-flex flex-lg-row flex-column align-items-center" href="#4">
+                <img
+                  class="img-logo mb-1 d-lg-none d-inline"
+                  src="../assets/images/icons/icon-donate.svg"
+                  alt="donate"
+                />
+                小額捐款
+              </a>
+            </li>
+            <li>
+              <a class="py-lg-5 px-lg-2 pt-3 pb-4 px-1 d-flex flex-lg-row flex-column align-items-center" href="#5">
+                <img class="img-logo mb-1 d-lg-none d-inline" src="../assets/images/icons/icon-email.svg" alt="email" />
+                <span class="d-lg-inline d-none">民眾</span>服務信箱
+              </a>
             </li>
           </ul>
           <ul class="list-unstyled d-md-flex d-none gap-4 mb-0">

@@ -1,0 +1,15 @@
+.header-navbar {
+  font-size: 10px;
+  @include media-breakpoint-up(xl) {
+    font-size: 18px;
+  }
+}
+
+a {
+  .img-logo {
+    width: 24px;
+  }
+  &:hover {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,20 @@
+.banner {
+  padding-top: 99px;
+}
+
+.logo-primary {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--default-white, #fff);
+  border-radius: var(--spacer-16, 16px);
+  box-shadow: 0 4px 12px 0 rgba(163, 180, 203, 0.2);
+
+  .logo-number {
+    width: 50px;
+    height: 50px;
+    font-weight: 900;
+  }
+}
+
+.marquee {
+  padding: 10px;
+}

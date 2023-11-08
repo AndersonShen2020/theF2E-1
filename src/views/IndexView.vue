@@ -30,6 +30,13 @@
     </div>
   </div>
   <!-- 為喵星人，護台灣！ 從喵的眼中，看見台灣 喵的未來，人的希望 -->
+  <div class="bg-primary">
+    <ul class="list-unstyled fz-64 lh-105 text-white font-mantou marquee d-flex gap-6">
+      <li>為喵星人，護台灣！</li>
+      <li>從喵的眼中，看見台灣</li>
+      <li>喵的未來，人的希望</li>
+    </ul>
+  </div>
   <!-- 候選人主張 -->
   <div class="vh-100 bg-secondary" id="2"></div>
   <!-- 最新活動 -->

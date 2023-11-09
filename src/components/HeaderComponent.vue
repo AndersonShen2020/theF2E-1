@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <header>
-    <div class="container-fluid position-fixed bg-white">
+    <div class="container-fluid position-fixed bg-white z-3">
       <div class="px-lg-6 py-md-4">
         <nav class="d-flex justify-content-between align-items-center px-md-6 py-md-3 py-3">
           <h4 class="mb-0">

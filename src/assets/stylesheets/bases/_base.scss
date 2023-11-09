@@ -32,8 +32,25 @@
   font-size: 64px;
 }
 
-.fz-96 {
-  font-size: 96px;
+.mlh-slogan {
+  font-size: 52px;
+  @include media-breakpoint-up(lg) {
+    font-size: 96px;
+  }
+}
+
+.mlh-mainchar {
+  font-size: 28px;
+  @include media-breakpoint-up(lg) {
+    font-size: 40px;
+  }
+}
+
+.mlh-job {
+  font-size: 20px;
+  @include media-breakpoint-up(lg) {
+    font-size: 28px;
+  }
 }
 
 .lh-105 {

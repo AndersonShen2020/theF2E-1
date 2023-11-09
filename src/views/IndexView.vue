@@ -34,9 +34,7 @@
   </div>
   <!-- 為喵星人，護台灣！ 從喵的眼中，看見台灣 喵的未來，人的希望 -->
   <div class="bg-primary overflow-hiddene">
-    <ul
-      class="list-unstyled fz-64 lh-105 text-white font-mantou marquee d-flex gap-6 text-nowrap mb-0 position-relative"
-    >
+    <ul class="list-unstyled lh-105 text-white font-mantou marquee d-flex gap-6 text-nowrap mb-0 position-relative">
       <li>為喵星人，護台灣！</li>
       <li>從喵的眼中，看見台灣</li>
       <li>喵的未來，人的希望</li>

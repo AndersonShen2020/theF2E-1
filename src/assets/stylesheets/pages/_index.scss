@@ -17,7 +17,11 @@
 
 .marquee {
   padding: 10px 0;
+  font-size: 40px;
   animation: marquee 15s linear infinite;
+  @include media-breakpoint-up(lg) {
+    font-size: 64px;
+  }
 }
 
 @keyframes marquee {

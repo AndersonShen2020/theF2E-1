@@ -42,20 +42,34 @@
   </div>
   <!-- 候選人主張 -->
   <div class="bg-theme-2" id="2">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-12">
-          <p>ADVOCATE</p>
-          <h2>候選人主張</h2>
-          <h3>我堅信 ! 藉由推動更完善的貓咪福利和相關政策，更是間接地投資於台灣的未來。</h3>
-          <p>
-            畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的 GDP 經濟帶來巨大效益。
-            <br />
-            因此，我期望能在立法院內推進這些政策，確保每一隻貓咪都能得到他們應有的照顧，同時也為台灣的經濟發展助一臂之力。讓我們一同護航台灣的幸福經濟，從照顧每一隻貓咪開始。
-          </p>
-        </div>
-        <div class="col-lg-6 col-12">
-          <img class="img-fluid" src="../assets/images/pictures/image 8.webp" alt="advocate" />
+    <div class="py-16">
+      <div class="py-10">
+        <div class="container">
+          <div class="bg-white d-flex gap-6 rounded-5">
+            <div class="rounded-start-5 py-16 px-10 d-flex flex-column gap-8">
+              <div class="d-flex flex-column align-items-center">
+                <p class="mb-0 fw-bold text-white bg-slate-700 py-2 px-3 rounded-3">ADVOCATE</p>
+                <h2 class="font-mantou bg-primary-gradient text-clip display-3 fw-normal lh-base">候選人主張</h2>
+              </div>
+              <h3 class="fw-bold lh-base mb-0">
+                我堅信 ! 藉由推動更完善的<span class="text-primary">貓咪福利</span>和相關政策，更是間接地投資於<span
+                  class="text-primary"
+                  >台灣的未來</span
+                >。
+              </h3>
+              <p class="advocate-text">
+                畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的 GDP
+                經濟帶來巨大效益。
+                <br />
+                因此，我期望能在立法院內推進這些政策，確保每一隻貓咪都能得到他們應有的照顧，同時也為台灣的經濟發展助一臂之力。讓我們一同護航台灣的幸福經濟，從照顧每一隻貓咪開始。
+              </p>
+            </div>
+            <img
+              class="img-fluid object-fit-cover rounded-end-5 w-50"
+              src="../assets/images/pictures/image 8.webp"
+              alt="advocate"
+            />
+          </div>
         </div>
       </div>
     </div>

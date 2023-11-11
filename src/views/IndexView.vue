@@ -45,19 +45,21 @@
     <div class="py-16">
       <div class="py-10">
         <div class="container">
-          <div class="bg-white d-flex gap-6 rounded-5">
-            <div class="rounded-start-5 py-16 px-10 d-flex flex-column gap-8">
+          <div class="bg-white d-flex flex-lg-row flex-column gap-lg-6 rounded-5">
+            <div class="rounded-start-5 py-lg-16 px-lg-10 py-10 px-6 d-flex flex-column gap-8">
               <div class="d-flex flex-column align-items-center">
                 <p class="mb-0 fw-bold text-white bg-slate-700 py-2 px-3 rounded-3">ADVOCATE</p>
-                <h2 class="font-mantou bg-primary-gradient text-clip display-3 fw-normal lh-base">候選人主張</h2>
+                <h2 class="font-mantou bg-primary-gradient text-clip display-3 fw-normal lh-base mb-0 sub-title">
+                  候選人主張
+                </h2>
               </div>
-              <h3 class="fw-bold lh-base mb-0">
+              <h3 class="fw-bold lh-base mb-0 advocate-subtitle">
                 我堅信 ! 藉由推動更完善的<span class="text-primary">貓咪福利</span>和相關政策，更是間接地投資於<span
                   class="text-primary"
                   >台灣的未來</span
                 >。
               </h3>
-              <p class="advocate-text">
+              <p class="advocate-text mb-0">
                 畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的 GDP
                 經濟帶來巨大效益。
                 <br />
@@ -65,7 +67,7 @@
               </p>
             </div>
             <img
-              class="img-fluid object-fit-cover rounded-end-5 w-50"
+              class="img-fluid object-fit-cover rounded-end-lg-5 rounded-bottom-5 w-lg-50 w-auto"
               src="../assets/images/pictures/image 8.webp"
               alt="advocate"
             />

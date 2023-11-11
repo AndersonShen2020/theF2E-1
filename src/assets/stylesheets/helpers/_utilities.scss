@@ -732,6 +732,7 @@ $utilities: map-merge(
       values: none auto
     ),
     "rounded": (
+      responsive: true,
       property: border-radius,
       class: rounded,
       values: (
@@ -747,6 +748,7 @@ $utilities: map-merge(
       )
     ),
     "rounded-top": (
+      responsive: true,
       property: border-top-left-radius border-top-right-radius,
       class: rounded-top,
       values: (
@@ -762,6 +764,7 @@ $utilities: map-merge(
       )
     ),
     "rounded-end": (
+      responsive: true,
       property: border-top-right-radius border-bottom-right-radius,
       class: rounded-end,
       values: (
@@ -777,6 +780,7 @@ $utilities: map-merge(
       )
     ),
     "rounded-bottom": (
+      responsive: true,
       property: border-bottom-right-radius border-bottom-left-radius,
       class: rounded-bottom,
       values: (
@@ -792,6 +796,7 @@ $utilities: map-merge(
       )
     ),
     "rounded-start": (
+      responsive: true,
       property: border-bottom-left-radius border-top-left-radius,
       class: rounded-start,
       values: (

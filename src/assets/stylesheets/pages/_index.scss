@@ -35,6 +35,23 @@
   }
 }
 
+.advocate-subtitle {
+  font-size: 24px;
+  @include media-breakpoint-up(lg) {
+    font-size: 28px;
+  }
+}
+
 .advocate-text {
-  font-size: 18px;
+  font-size: 16px;
+  @include media-breakpoint-up(lg) {
+    font-size: 18px;
+  }
+}
+
+.sub-title {
+  font-size: 52px;
+  @include media-breakpoint-up(lg) {
+    font-size: 64px;
+  }
 }

@@ -75,7 +75,92 @@
     </div>
   </div>
   <!-- 最新活動 -->
-  <div class="vh-100 bg-success" id="3"></div>
+  <div class="py-16" id="3">
+    <div class="py-10">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center">
+          <p class="mb-0 fw-bold text-white bg-slate-700 py-2 px-3 rounded-3">LATEST EVENTS</p>
+          <h2 class="font-mantou bg-primary-gradient text-clip display-3 fw-normal lh-base mb-0 sub-title">最新活動</h2>
+        </div>
+        <div class="d-flex flex-lg-row flex-column gap-6 mt-16">
+          <div class="w-lg-50 w-100">
+            <div class="card border-0">
+              <img
+                class="img-fluid object-fit-cover rounded-4 img-event"
+                src="../assets/images/pictures/event-1.webp"
+                alt="參與台北寵物論壇，爭取貓咪友善環境"
+              />
+              <div class="card-body p-0">
+                <p class="mb-0 mt-4 text-slate-400 event-date">2023/12/26</p>
+                <h3 class="mb-0 mt-2 fs-5 fw-bold lh-base">參與台北寵物論壇，爭取貓咪友善環境</h3>
+                <p class="mb-0 mt-2">
+                  炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！我相信，我們的都市中，每一隻貓咪都應該有自己的
+                  VIP 休憩空間。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-lg-50 w-100">
+            <ul class="list-unstyled mb-0">
+              <li class="mb-6">
+                <div class="d-flex flex-row border-0">
+                  <img
+                    class="me-4 img-fluid object-fit-cover rounded-4 img-event-list"
+                    src="../assets/images/pictures/event-2.webp"
+                    alt="掃街模式開啟！帶著你的貓耳，來和我一起走！"
+                  />
+                  <div class="p-0 event-box">
+                    <p class="mb-0 text-slate-400 event-date">2023/12/24</p>
+                    <h3 class="mb-0 mt-2 fs-6 fw-bold lh-base">掃街模式開啟！帶著你的貓耳，來和我一起走！</h3>
+                    <p class="mb-0 mt-2">
+                      街上氣氛真的很棒，從小孩到大人，甚至有些狗狗朋友都帶著貓耳來找我握手，真的太可愛了！
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="mb-6">
+                <div class="d-flex flex-row border-0">
+                  <img
+                    class="me-4 img-fluid object-fit-cover rounded-4 img-event-list"
+                    src="../assets/images/pictures/event-3.webp"
+                    alt="收容所模特兒大比拼！"
+                  />
+                  <div class="p-0 event-box">
+                    <p class="mb-0 text-slate-400 event-date">2023/12/20</p>
+                    <h3 class="mb-0 mt-2 fs-6 fw-bold lh-base">收容所模特兒大比拼！</h3>
+                    <p class="mb-0 mt-2">
+                      今天的收容所不再是一片寂靜。為了讓更多人認識到這裡的毛孩子，我們舉辦了一場前所未有的「模特兒走秀」！
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="mb-6">
+                <div class="d-flex flex-row border-0">
+                  <img
+                    class="me-4 img-fluid object-fit-cover rounded-4 img-event-list"
+                    src="../assets/images/pictures/event-1.webp"
+                    alt="參與台北寵物論壇，爭取貓咪友善環境"
+                  />
+                  <div class="p-0 event-box">
+                    <p class="mb-0 text-slate-400 event-date">2023/12/26</p>
+                    <h3 class="mb-0 mt-2 fs-6 fw-bold lh-base">參與台北寵物論壇，爭取貓咪友善環境</h3>
+                    <p class="mb-0 mt-2">
+                      炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！我相信，我們的都市中，每一隻貓咪都應該有自己的
+                      VIP 休憩空間。
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="py-4 px-6 btn bg-slate-100 rounded-pill fw-semibold lh-base">
+              查看更多
+              <img class="ms-2 fs-2" src="@/assets/images/pictures/arrow_forward.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- 政策議題 -->
   <div class="vh-100 bg-danger" id="4"></div>
   <!-- 小額支持喵喵 & 民眾服務信箱 -->

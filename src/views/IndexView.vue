@@ -1,4 +1,10 @@
-<script setup></script>
+<script setup>
+import { register } from "swiper/element/bundle";
+
+register();
+
+const spaceBetween = 10;
+</script>
 
 <template>
   <!-- 台灣的明天 喵先鋪路 -->
@@ -162,7 +168,227 @@
     </div>
   </div>
   <!-- 政策議題 -->
-  <div class="vh-100 bg-danger" id="4"></div>
+  <div class="bg-theme-2" id="4">
+    <div class="py-16">
+      <div class="py-10">
+        <div class="d-flex flex-column align-items-center">
+          <p class="mb-0 fw-bold text-white bg-slate-700 py-2 px-3 rounded-3">POLICY ISSUES</p>
+          <h2 class="font-mantou bg-primary-gradient text-clip display-3 fw-normal lh-base mb-0 sub-title">政策議題</h2>
+        </div>
+        <swiper-container
+          loop="true"
+          pagination="true"
+          navigation="true"
+          effect="coverflow"
+          grab-cursor="true"
+          centered-slides="true"
+          slides-per-view="auto"
+          auto-height="true"
+          space-between="48"
+          coverflow-effect-rotate="0"
+          coverflow-effect-stretch="-30"
+          coverflow-effect-depth="150"
+          coverflow-effect-modifier="1"
+          coverflow-effect-slide-shadows="false"
+        >
+          <swiper-slide>
+            <div class="p-8 bg-white rounded-5">
+              <div class="d-flex gap-8">
+                <img src="@/assets/images/pictures/image 5.webp" alt="為毛孩子謀福利！推動寵物醫療保障方案" />
+                <div class="d-flex flex-column justify-content-center align-items-start">
+                  <p>喵的保障</p>
+                  <h3>為毛孩子謀福利！<br />推動寵物醫療保障方案</h3>
+                  <button class="py-4 px-6 btn bg-primary text-white rounded-pill fw-semibold lh-base align-baseline">
+                    查看<svg
+                      class="arrow-forward-icon ms-2 align-text-top"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11 0.496948L21.6875 11.1844L11 21.8719L9.125 19.9969L16.5625 12.4969H0.3125V9.87195H16.5625L9.125 2.37195L11 0.496948Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="p-8 bg-white rounded-5">
+              <div class="d-flex gap-8">
+                <img src="@/assets/images/pictures/image 5.webp" alt="為毛孩子謀福利！推動寵物醫療保障方案" />
+                <div class="d-flex flex-column justify-content-center align-items-start">
+                  <p>喵的保障</p>
+                  <h3>為毛孩子謀福利！<br />推動寵物醫療保障方案</h3>
+                  <button class="py-4 px-6 btn bg-primary text-white rounded-pill fw-semibold lh-base align-baseline">
+                    查看<svg
+                      class="arrow-forward-icon ms-2 align-text-top"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11 0.496948L21.6875 11.1844L11 21.8719L9.125 19.9969L16.5625 12.4969H0.3125V9.87195H16.5625L9.125 2.37195L11 0.496948Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="p-8 bg-white rounded-5">
+              <div class="d-flex gap-8">
+                <img src="@/assets/images/pictures/image 5.webp" alt="為毛孩子謀福利！推動寵物醫療保障方案" />
+                <div class="d-flex flex-column justify-content-center align-items-start">
+                  <p>喵的保障</p>
+                  <h3>為毛孩子謀福利！<br />推動寵物醫療保障方案</h3>
+                  <button class="py-4 px-6 btn bg-primary text-white rounded-pill fw-semibold lh-base align-baseline">
+                    查看<svg
+                      class="arrow-forward-icon ms-2 align-text-top"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11 0.496948L21.6875 11.1844L11 21.8719L9.125 19.9969L16.5625 12.4969H0.3125V9.87195H16.5625L9.125 2.37195L11 0.496948Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="p-8 bg-white rounded-5">
+              <div class="d-flex gap-8">
+                <img src="@/assets/images/pictures/image 5.webp" alt="為毛孩子謀福利！推動寵物醫療保障方案" />
+                <div class="d-flex flex-column justify-content-center align-items-start">
+                  <p>喵的保障</p>
+                  <h3>為毛孩子謀福利！<br />推動寵物醫療保障方案</h3>
+                  <button class="py-4 px-6 btn bg-primary text-white rounded-pill fw-semibold lh-base align-baseline">
+                    查看<svg
+                      class="arrow-forward-icon ms-2 align-text-top"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11 0.496948L21.6875 11.1844L11 21.8719L9.125 19.9969L16.5625 12.4969H0.3125V9.87195H16.5625L9.125 2.37195L11 0.496948Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="p-8 bg-white rounded-5">
+              <div class="d-flex gap-8">
+                <img src="@/assets/images/pictures/image 5.webp" alt="為毛孩子謀福利！推動寵物醫療保障方案" />
+                <div class="d-flex flex-column justify-content-center align-items-start">
+                  <p>喵的保障</p>
+                  <h3>為毛孩子謀福利！<br />推動寵物醫療保障方案</h3>
+                  <button class="py-4 px-6 btn bg-primary text-white rounded-pill fw-semibold lh-base align-baseline">
+                    查看<svg
+                      class="arrow-forward-icon ms-2 align-text-top"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11 0.496948L21.6875 11.1844L11 21.8719L9.125 19.9969L16.5625 12.4969H0.3125V9.87195H16.5625L9.125 2.37195L11 0.496948Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="p-8 bg-white rounded-5">
+              <div class="d-flex gap-8">
+                <img src="@/assets/images/pictures/image 5.webp" alt="為毛孩子謀福利！推動寵物醫療保障方案" />
+                <div class="d-flex flex-column justify-content-center align-items-start">
+                  <p>喵的保障</p>
+                  <h3>為毛孩子謀福利！<br />推動寵物醫療保障方案</h3>
+                  <button class="py-4 px-6 btn bg-primary text-white rounded-pill fw-semibold lh-base align-baseline">
+                    查看<svg
+                      class="arrow-forward-icon ms-2 align-text-top"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11 0.496948L21.6875 11.1844L11 21.8719L9.125 19.9969L16.5625 12.4969H0.3125V9.87195H16.5625L9.125 2.37195L11 0.496948Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="p-8 bg-white rounded-5">
+              <div class="d-flex gap-8">
+                <img src="@/assets/images/pictures/image 5.webp" alt="為毛孩子謀福利！推動寵物醫療保障方案" />
+                <div class="d-flex flex-column justify-content-center align-items-start">
+                  <p>喵的保障</p>
+                  <h3>為毛孩子謀福利！<br />推動寵物醫療保障方案</h3>
+                  <button class="py-4 px-6 btn bg-primary text-white rounded-pill fw-semibold lh-base align-baseline">
+                    查看<svg
+                      class="arrow-forward-icon ms-2 align-text-top"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11 0.496948L21.6875 11.1844L11 21.8719L9.125 19.9969L16.5625 12.4969H0.3125V9.87195H16.5625L9.125 2.37195L11 0.496948Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </div>
+  </div>
   <!-- 小額支持喵喵 & 民眾服務信箱 -->
   <div class="vh-100 bg-warning" id="5"></div>
 </template>
+
+<style>
+swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+/* swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+</style>

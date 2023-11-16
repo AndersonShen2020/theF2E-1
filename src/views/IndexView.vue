@@ -183,7 +183,6 @@ const spaceBetween = 10;
           grab-cursor="true"
           centered-slides="true"
           slides-per-view="auto"
-          auto-height="true"
           space-between="48"
           coverflow-effect-rotate="0"
           coverflow-effect-stretch="-30"
@@ -191,31 +190,6 @@ const spaceBetween = 10;
           coverflow-effect-modifier="1"
           coverflow-effect-slide-shadows="false"
         >
-          <swiper-slide>
-            <div class="p-8 bg-white rounded-5">
-              <div class="d-flex gap-8">
-                <img src="@/assets/images/pictures/image 5.webp" alt="為毛孩子謀福利！推動寵物醫療保障方案" />
-                <div class="d-flex flex-column justify-content-center align-items-start">
-                  <p>喵的保障</p>
-                  <h3>為毛孩子謀福利！<br />推動寵物醫療保障方案</h3>
-                  <button class="py-4 px-6 btn bg-primary text-white rounded-pill fw-semibold lh-base align-baseline">
-                    查看<svg
-                      class="arrow-forward-icon ms-2 align-text-top"
-                      width="22"
-                      height="22"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M11 0.496948L21.6875 11.1844L11 21.8719L9.125 19.9969L16.5625 12.4969H0.3125V9.87195H16.5625L9.125 2.37195L11 0.496948Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </swiper-slide>
           <swiper-slide>
             <div class="p-8 bg-white rounded-5">
               <div class="d-flex gap-8">
@@ -374,21 +348,26 @@ const spaceBetween = 10;
   <div class="vh-100 bg-warning" id="5"></div>
 </template>
 
-<style>
+<style lang="scss">
+@mixin bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 500px;
+  background: #da7d4a;
+}
+
 swiper-container {
   width: 100%;
   height: auto;
+  &::part(bullet) {
+    @include bullet;
+    opacity: 0.4;
+  }
+  &::part(bullet-active) {
+    @include bullet;
+  }
 }
-
-/* swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+swiper-slide {
+  padding-bottom: 40px;
 }
-
-swiper-slide img {
-  display: block;
-  width: 100%;
-} */
 </style>

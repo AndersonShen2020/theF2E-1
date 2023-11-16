@@ -1,9 +1,27 @@
 <script setup>
+import { onMounted } from "vue";
 import { register } from "swiper/element/bundle";
+import { Pagination } from "swiper/modules";
 
-register();
+onMounted(() => {
+  register();
 
-const spaceBetween = 10;
+  const swiperEl = document.querySelector("swiper-container");
+  const params = {
+    modules: [Pagination],
+    // inject modules styles to shadow DOM
+    injectStylesUrls: ["path/to/pagination-element.min.css"],
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true
+    }
+  };
+
+  Object.assign(swiperEl, params);
+
+  swiperEl.initialize();
+});
 </script>
 
 <template>
@@ -176,9 +194,10 @@ const spaceBetween = 10;
           <h2 class="font-mantou bg-primary-gradient text-clip display-3 fw-normal lh-base mb-0 sub-title">政策議題</h2>
         </div>
         <swiper-container
+          init="false"
           loop="true"
-          pagination="true"
-          navigation="true"
+          navigation-next-el=".swiper-next-button"
+          navigation-prev-el=".swiper-prev-button"
           effect="coverflow"
           grab-cursor="true"
           centered-slides="true"
@@ -341,6 +360,11 @@ const spaceBetween = 10;
             </div>
           </swiper-slide>
         </swiper-container>
+        <div class="d-flex justify-content-center align-items-center gap-4">
+          <div class="swiper-prev-button"><img src="../assets/images/pictures/button-prev.svg" alt="" /></div>
+          <div class="swiper-pagination d-flex gap-4"></div>
+          <div class="swiper-next-button"><img src="../assets/images/pictures/button-next.svg" alt="" /></div>
+        </div>
       </div>
     </div>
   </div>
@@ -349,24 +373,29 @@ const spaceBetween = 10;
 </template>
 
 <style lang="scss">
-@mixin bullet {
+@mixin bullet($opacity) {
+  display: inline-block;
   width: 12px;
   height: 12px;
   border-radius: 500px;
   background: #da7d4a;
+  opacity: $opacity;
 }
 
 swiper-container {
   width: 100%;
   height: auto;
-  &::part(bullet) {
-    @include bullet;
-    opacity: 0.4;
+}
+
+.swiper-pagination {
+  &-bullet {
+    @include bullet(0.4);
   }
-  &::part(bullet-active) {
-    @include bullet;
+  &-bullet-active {
+    @include bullet(1);
   }
 }
+
 swiper-slide {
   padding-bottom: 40px;
 }

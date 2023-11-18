@@ -106,11 +106,19 @@
   }
 }
 
-.arrow-forward-icon {
+@mixin arrow-template($fill) {
   display: inline-block;
   width: 1.2rem;
   height: 1.2rem;
-  fill: #fff;
+  fill: $fill;
+}
+
+.arrow-forward-icon {
+  @include arrow-template(#fff);
+}
+
+.donate-arrow-forward-icon {
+  @include arrow-template(#334155);
 }
 
 swiper-slide {

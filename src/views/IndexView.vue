@@ -409,11 +409,11 @@ onMounted(() => {
   <div class="py-16" id="5">
     <div class="py-10">
       <div class="container">
-        <div class="row">
+        <div class="row g-6">
           <div class="col-md-6 col-12">
-            <div class="p-24 rounded-5 bg-primary d-flex flex-column">
-              <h2 class="mb-0 font-mantou fs-52 lh-75 text-white">小額支持喵喵</h2>
-              <p class="mb-0 fw-semibold text-white">您的小筆捐款，是每隻毛孩未來的大大動力！</p>
+            <div class="p-lg-24 py-10 px-6 rounded-5 bg-primary d-flex flex-column">
+              <h2 class="mb-0 font-mantou second-title text-white">小額支持喵喵</h2>
+              <p class="mb-0 fw-semibold fs-lg-5 fs-6 text-white">您的小筆捐款，是每隻毛孩未來的大大動力！</p>
               <div class="d-flex justify-content-between align-items-center mt-6">
                 <button class="mt-10 py-4 px-6 btn bg-white rounded-pill fw-semibold lh-base align-baseline">
                   小額捐款<svg
@@ -429,14 +429,16 @@ onMounted(() => {
                     />
                   </svg>
                 </button>
-                <img src="@/assets/images/pictures/image 11.webp" alt="donate" />
+                <img class="img-donate" src="@/assets/images/pictures/image 11.webp" alt="donate" />
               </div>
             </div>
           </div>
           <div class="col-md-6 col-12">
-            <div class="p-24 rounded-5 bg-slate-700 d-flex flex-column h-100">
-              <h2 class="mb-0 font-mantou fs-52 lh-75 text-white">民眾服務信箱</h2>
-              <p class="mb-0 fw-semibold text-white">親愛的鄉親，每一位市民的意見都是我們社區前進的原動力</p>
+            <div class="p-lg-24 py-10 px-6 rounded-5 bg-slate-700 d-flex flex-column h-100">
+              <h2 class="mb-0 font-mantou second-title text-white">民眾服務信箱</h2>
+              <p class="mb-0 fw-semibold fs-lg-5 fs-6 text-white">
+                親愛的鄉親，每一位市民的意見都是我們社區前進的原動力
+              </p>
               <div class="d-flex flex-fill justify-content-between align-items-center mt-6">
                 <button class="mt-10 py-4 px-6 btn bg-white rounded-pill fw-semibold lh-base align-baseline">
                   填寫表單<svg
@@ -452,7 +454,7 @@ onMounted(() => {
                     />
                   </svg>
                 </button>
-                <img src="@/assets/images/pictures/image 15.svg" alt="email" />
+                <img class="img-email" src="@/assets/images/pictures/image 15.svg" alt="email" />
               </div>
             </div>
           </div>

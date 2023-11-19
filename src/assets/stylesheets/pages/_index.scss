@@ -130,3 +130,23 @@ swiper-slide {
     width: 792px;
   }
 }
+
+.second-title {
+  font-size: 40px;
+  line-height: 58px;
+  @include media-breakpoint-up(lg) {
+    font-size: 52px;
+    line-height: 75px;
+  }
+}
+
+.img-donate,
+.img-email {
+  width: 135px;
+  @include media-breakpoint-up(md) {
+    width: 128px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 100%;
+  }
+}

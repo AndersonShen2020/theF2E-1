@@ -406,8 +406,8 @@ onMounted(() => {
     </div>
   </div>
   <!-- 小額支持喵喵 & 民眾服務信箱 -->
-  <div class="py-16" id="5">
-    <div class="py-10">
+  <div class="py-lg-16 py-md-15 py-16" id="5">
+    <div class="py-lg-10 py-0">
       <div class="container">
         <div class="row g-6">
           <div class="col-md-6 col-12">

@@ -462,6 +462,25 @@ onMounted(() => {
       </div>
     </div>
   </div>
+  <!-- 尾部立委標語 -->
+  <div class="py-16">
+    <div class="py-10">
+      <h3 class="mb-0 bg-primary-gradient text-center font-mantou text-clip pt-lg-24 mlh-slogan lh-105">
+        台灣的明天 <br class="d-lg-none d-inline" />
+        喵先鋪路
+      </h3>
+      <div class="d-flex justify-content-center">
+        <h2 class="lh-base mb-0 d-flex align-items-center logo-primary py-3 px-4 mt-4">
+          <span
+            class="align-items-center bg-primary-gradient d-inline-flex justify-content-center rounded-circle text-white logo-number fs-2 me-4"
+          >
+            3
+          </span>
+          <p class="mb-0 text-primary fw-bold mlh-mainchar">喵立翰 Miao Li-Han</p>
+        </h2>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss">

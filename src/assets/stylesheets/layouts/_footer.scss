@@ -1,5 +1,14 @@
+footer {
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 71px;
+  }
+}
+
 .footer-content-box {
-  width: 676px;
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    width: 676px;
+  }
 }
 
 .footer-number-logo {

@@ -1,8 +1,8 @@
 <script setup></script>
 <template>
   <header>
-    <div class="container-fluid position-md-fixed position-static bg-white z-3">
-      <div class="px-lg-6 py-md-4">
+    <div class="container-fluid position-md-fixed position-static z-3">
+      <div class="mx-lg-6 my-md-4 bg-white rounded-4">
         <nav class="d-flex justify-content-between align-items-center px-md-6 py-md-3 py-3">
           <h4 class="mb-0">
             <RouterLink to="/">

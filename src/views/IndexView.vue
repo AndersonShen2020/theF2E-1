@@ -29,7 +29,7 @@ onMounted(() => {
   <div class="container">
     <div class="banner" id="1">
       <div class="d-flex flex-column justify-content-center">
-        <h3 class="bg-primary-gradient text-center font-mantou text-clip pt-lg-24 mlh-slogan lh-105">
+        <h3 class="bg-primary-gradient text-center font-mantou text-clip pt-lg-24 pt-8 mlh-slogan lh-105">
           台灣的明天 <br class="d-lg-none d-inline" />
           喵先鋪路
         </h3>

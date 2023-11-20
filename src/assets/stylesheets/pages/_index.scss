@@ -1,5 +1,7 @@
 .banner {
-  padding-top: 99px;
+  @include media-breakpoint-up(md) {
+    padding-top: 99px;
+  }
 }
 
 .logo-primary {

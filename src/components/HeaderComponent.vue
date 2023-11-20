@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <header>
-    <div class="container-fluid position-fixed bg-white z-3">
+    <div class="container-fluid position-md-fixed position-static bg-white z-3">
       <div class="px-lg-6 py-md-4">
         <nav class="d-flex justify-content-between align-items-center px-md-6 py-md-3 py-3">
           <h4 class="mb-0">
@@ -11,7 +11,7 @@
             </RouterLink>
           </h4>
           <ul
-            class="list-unstyled d-flex justify-content-lg-center justify-content-around gap-4 mb-0 position-lg-static position-fixed bottom-0 start-50 translate-middle-lg-0 translate-middle-x bg-white w-lg-auto w-100 header-navbar"
+            class="list-unstyled d-flex justify-content-lg-center justify-content-around gap-4 mb-0 position-lg-static position-fixed bottom-0 start-50 translate-middle-lg-0 translate-middle-x bg-white w-lg-auto w-100 header-navbar z-1"
           >
             <li>
               <a class="p-lg-2 pt-3 pb-4 px-1 d-flex flex-lg-row flex-column align-items-center" href="#1">

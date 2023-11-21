@@ -1,6 +1,3 @@
-// font
-@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+TC:wght@400;600;700&display=swap";
-
 // bootstrap
 @import "bootstrap/scss/functions";
 @import "./helpers/variables";
@@ -17,6 +14,7 @@
 @import "bootstrap/scss/bootstrap";
 
 // base
+@import "./bases/font-style";
 @import "./bases/base";
 
 // layout

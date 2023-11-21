@@ -1,0 +1,20 @@
+// font
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+TC:wght@400;600;700&display=swap";
+
+//* 主要字體
+.font-en {
+  font-family: Inter, sans-serif;
+}
+.font-tw {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+//* 饅頭黑體 https://github.com/mant0u0/MantouSans
+@font-face {
+  font-family: "Mantou Sans";
+  src: url("/src/assets/fonts/MantouSans-Regular.ttf") format(truetype);
+}
+
+.font-mantou {
+  font-family: "Mantou Sans", sans-serif;
+}

@@ -1,0 +1,18 @@
+.btn-modal-close {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  background-color: #334155;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    content: "x";
+    transform: translate(-50%, -54%);
+  }
+}

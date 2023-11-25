@@ -1,5 +1,21 @@
 <script setup>
 import PolicyIssues from "@/components/PolicyIssuesComponent.vue";
+import Modal from "@/components/ModalTemplate.vue";
+import { ref, computed, onMounted, watch } from "vue";
+
+// Store
+import { useModalStore } from "@/stores/modal";
+const modalStore = useModalStore();
+const { setModalController, setModalTitle, setCurrentComp } = modalStore;
+
+// Modal
+const modalComp = ref(null);
+watch(modalComp, (newVal) => {
+  setModalController(newVal);
+});
+function showModal() {
+  modalComp?.value?.showModal();
+}
 </script>
 
 <template>
@@ -154,7 +170,10 @@ import PolicyIssues from "@/components/PolicyIssuesComponent.vue";
                 </div>
               </li>
             </ul>
-            <button class="py-4 px-6 btn bg-slate-100 rounded-pill fw-semibold lh-base">
+            <button
+              class="py-4 px-6 btn bg-slate-100 rounded-pill fw-semibold lh-base"
+              @click="showModal(), setModalTitle('最新活動'), setCurrentComp('LatestEventsContent')"
+            >
               查看更多
               <img class="ms-2 fs-2" src="@/assets/images/pictures/arrow_forward.svg" alt="" />
             </button>
@@ -241,4 +260,6 @@ import PolicyIssues from "@/components/PolicyIssuesComponent.vue";
       </div>
     </div>
   </div>
+  <!-- Modal -->
+  <Modal ref="modalComp" />
 </template>

@@ -1,9 +1,15 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { onMounted } from "vue";
 import { register } from "swiper/element/bundle";
 import { Pagination } from "swiper/modules";
 import { getAssetsFile } from "@/util/DynamicImg.js";
-import Modal from "@/components/PolicyIssuesModal.vue";
+
+// Store
+import { storeToRefs } from "pinia";
+import { useModalStore } from "@/stores/modal";
+const modalStore = useModalStore();
+const { setModalTitle, setCurrentComp } = modalStore;
+const { getModalController } = storeToRefs(modalStore);
 
 const policyData = [
   {
@@ -62,12 +68,6 @@ onMounted(() => {
   Object.assign(swiperEl, params);
   swiperEl.initialize();
 });
-
-// Modal
-const policyModal = ref(null);
-function showModal() {
-  policyModal?.value?.showModal();
-}
 </script>
 
 <template>
@@ -104,7 +104,9 @@ function showModal() {
                   <h3 class="mt-4 mb-0 fs-4 fw-bold lh-base">{{ data.title1 }}<br />{{ data.title2 }}</h3>
                   <button
                     class="mt-10 py-4 px-6 btn bg-primary text-white rounded-pill fw-semibold lh-base align-baseline"
-                    @click="showModal"
+                    @click="
+                      getModalController.showModal(), setModalTitle('政策議題'), setCurrentComp('PolicyIssuesContent')
+                    "
                   >
                     查看<svg
                       class="arrow-forward-icon ms-2 align-text-top"
@@ -132,7 +134,6 @@ function showModal() {
       </div>
     </div>
   </section>
-  <Modal ref="policyModal" />
 </template>
 
 <style lang="scss">

@@ -12,20 +12,17 @@ import { useModalStore } from "@/stores/modal";
 const modalStore = useModalStore();
 const { getModalTitle, getCurrentComp } = storeToRefs(modalStore);
 
-let modal = null;
-
-onMounted(() => {
-  modal = new Modal("#modal");
-});
-
-onUpdated(() => {
-  modal = new Modal("#modal");
-});
+const modalRef = ref(null);
+let modal;
 
 const selectComp = {
   PolicyIssuesContent,
   LatestEventsContent
 };
+
+onMounted(() => {
+  modal = new Modal(modalRef.value, {});
+});
 
 function showModal() {
   modal.show();
@@ -42,7 +39,7 @@ defineExpose({
 </script>
 
 <template>
-  <div id="modal" class="modal" tabindex="-1" ref="modal">
+  <div id="templateModal" class="modal" tabindex="-1" ref="modalRef">
     <div class="modal-dialog modal-dialog-centered modal-xxl">
       <div class="modal-content">
         <div class="modal-header py-6 px-12 border-0">

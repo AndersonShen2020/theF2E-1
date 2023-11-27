@@ -196,26 +196,29 @@
   }
 }
 
-//* 增加 xxl 斷點
+//* 增加 xxl 斷點, 調整高度
 @include media-breakpoint-up(lg) {
   .modal-lg,
   .modal-xl,
   .modal-xxl {
+    height: calc(100vh - 56px);
     --#{$prefix}modal-width: #{$modal-lg};
   }
 }
 
-//* 增加 xxl 斷點
+//* 增加 xxl 斷點, 調整高度
 @include media-breakpoint-up(xl) {
   .modal-xl,
   .modal-xxl {
+    height: calc(100vh - 56px);
     --#{$prefix}modal-width: #{$modal-xl};
   }
 }
 
-//* 增加 xxl 斷點
+//* 增加 xxl 斷點, 調整高度
 @include media-breakpoint-up(xxl) {
   .modal-xxl {
+    height: calc(100vh - 56px);
     --#{$prefix}modal-width: #{$modal-xxl};
   }
 }
@@ -250,3 +253,17 @@
   }
 }
 // scss-docs-end modal-fullscreen-loop
+
+//* custom
+.content-main-img {
+  @include media-breakpoint-up(xl) {
+    width: 507px;
+    height: 318px;
+  }
+}
+
+.content-second-img {
+  @include media-breakpoint-up(xl) {
+    height: 134px;
+  }
+}

@@ -41,7 +41,7 @@ defineExpose({
 <template>
   <div id="templateModal" class="modal" tabindex="-1" ref="modalRef">
     <div class="modal-dialog modal-dialog-centered modal-xxl">
-      <div class="modal-content">
+      <div class="modal-content h-100">
         <div class="modal-header py-6 px-12 border-0">
           <h5 class="modal-title fs-2 fw-bold">{{ getModalTitle }}</h5>
           <button type="button" class="btn-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>

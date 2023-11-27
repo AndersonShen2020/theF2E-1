@@ -42,11 +42,11 @@ defineExpose({
   <div id="templateModal" class="modal" tabindex="-1" ref="modalRef">
     <div class="modal-dialog modal-dialog-centered modal-xxl">
       <div class="modal-content h-100">
-        <div class="modal-header py-6 px-12 border-0">
+        <div class="modal-header py-lg-6 px-lg-12 pt-4 pb-2 px-4 border-0">
           <h5 class="modal-title fs-2 fw-bold">{{ getModalTitle }}</h5>
           <button type="button" class="btn-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body pt-2 pb-12 px-12">
+        <div class="modal-body pt-2 pb-lg-12 pb-4 px-lg-12 px-4">
           <component :is="selectComp[getCurrentComp]"></component>
         </div>
       </div>

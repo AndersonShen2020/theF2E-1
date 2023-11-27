@@ -46,7 +46,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="d-flex gap-8">
+  <div class="d-flex flex-lg-row flex-column gap-8">
     <div class="d-flex flex-column">
       <img
         class="content-main-img object-fit-cover rounded-24 mb-4"
@@ -56,10 +56,18 @@ onMounted(() => {
       <p class="mb-2 fs-14">{{ contentMain.title }}</p>
       <ul class="list-unstyled d-flex align-items-center gap-4">
         <li>分享</li>
-        <li><img src="@/assets/images/icons/icon-fb.svg" alt="fb" /></li>
-        <li><img src="@/assets/images/icons/icon-ig.svg" alt="instagram" /></li>
-        <li><img src="@/assets/images/icons/icon-line.svg" alt="line" /></li>
-        <li><img src="@/assets/images/icons/icon-twitter.svg" alt="twitter" /></li>
+        <li>
+          <a href="#"><img src="@/assets/images/icons/icon-fb.svg" alt="fb" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="@/assets/images/icons/icon-ig.svg" alt="instagram" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="@/assets/images/icons/icon-line.svg" alt="line" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="@/assets/images/icons/icon-twitter.svg" alt="twitter" /></a>
+        </li>
       </ul>
     </div>
     <div class="d-flex flex-column">
@@ -73,7 +81,7 @@ onMounted(() => {
       <div class="p-4 bg-slate-50 rounded-12">
         <h3 class="mb-4 fs-6 fw-semibold">更多活動</h3>
         <ul class="list-unstyled row gx-4">
-          <li class="col-4" v-for="event in contentSecond" :key="event.title">
+          <li class="col-lg-4 col-6" v-for="event in contentSecond" :key="event.title">
             <img
               class="content-second-img mb-3 object-fit-cover w-100 rounded-3"
               :src="getAssetsFile(event.img)"

@@ -8,7 +8,7 @@ import { getAssetsFile } from "@/util/DynamicImg.js";
 import { storeToRefs } from "pinia";
 import { useModalStore } from "@/stores/modal";
 const modalStore = useModalStore();
-const { setModalTitle, setCurrentComp } = modalStore;
+const { setModalTitle, setCurrentComp, setPolicyTitle } = modalStore;
 const { getModalController } = storeToRefs(modalStore);
 
 const policyData = [
@@ -105,7 +105,10 @@ onMounted(() => {
                   <button
                     class="mt-10 py-4 px-6 btn bg-primary text-white rounded-pill fw-semibold lh-base align-baseline"
                     @click="
-                      getModalController.showModal(), setModalTitle('政策議題'), setCurrentComp('PolicyIssuesContent')
+                      getModalController.showModal(),
+                        setModalTitle('政策議題'),
+                        setCurrentComp('PolicyIssuesContent'),
+                        setPolicyTitle(data.title1 + data.title2)
                     "
                   >
                     查看<svg

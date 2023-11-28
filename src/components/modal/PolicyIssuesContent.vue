@@ -90,7 +90,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="d-flex flex-lg-row flex-column gap-8">
+  <div class="d-flex flex-lg-row flex-column gap-8 h-100">
     <div class="d-flex flex-column">
       <img
         class="content-main-img object-fit-cover rounded-24 mb-4"
@@ -114,11 +114,11 @@ onMounted(() => {
         </li>
       </ul>
     </div>
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column w-100">
       <h2 class="mb-8 fw-bold lh-base text-primary">{{ contentMain.title }}</h2>
-      <div class="mb-16">
+      <div class="flex-grow-1">
         <div class="mb-8">
-          <ul class="list-unstyled d-flex flex-column gap-6">
+          <ul class="list-unstyled mb-0 d-flex flex-column gap-6">
             <li v-for="policy in contentMain.policys" :key="policy.title">
               <h5 class="lh-base fw-bold">{{ policy.title }}</h5>
               <p class="fs-18">{{ policy.content }}</p>

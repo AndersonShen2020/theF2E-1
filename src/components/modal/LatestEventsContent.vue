@@ -25,7 +25,7 @@ const eventData = [
 
 const mainTitle = ref("參與台北寵物論壇，爭取貓咪友善環境");
 const contentMain = ref({});
-const contentSecond = ref({});
+const contentSecond = ref([]);
 
 watch(mainTitle, (newVal) => {
   filterContent(newVal);
@@ -81,7 +81,7 @@ onMounted(() => {
       <div class="p-4 bg-slate-50 rounded-12">
         <h3 class="mb-4 fs-6 fw-semibold">更多活動</h3>
         <ul class="list-unstyled row gx-4">
-          <li class="col-lg-4 col-6" v-for="event in contentSecond" :key="event.title">
+          <li class="col-lg-4 col-6" v-for="event in contentSecond" :key="event.title" @click="mainTitle = event.title">
             <img
               class="content-second-img mb-3 object-fit-cover w-100 rounded-3"
               :src="getAssetsFile(event.img)"

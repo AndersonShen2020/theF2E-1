@@ -269,3 +269,31 @@
     height: 134px;
   }
 }
+
+$modal-left-content: 731px;
+
+.donate-content-left,
+.email-content-left {
+  @include media-breakpoint-up(xl) {
+    width: $modal-left-content;
+  }
+}
+
+.donate-content-right,
+.email-content-right {
+  @include media-breakpoint-up(xl) {
+    width: calc(100% - $modal-left-content);
+  }
+}
+
+.modal-img-donate {
+  @include media-breakpoint-up(xl) {
+    width: 336px;
+  }
+}
+
+.modal-content-donate-number {
+  @include media-breakpoint-up(xl) {
+    width: 140px;
+  }
+}

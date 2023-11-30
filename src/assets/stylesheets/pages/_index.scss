@@ -148,7 +148,16 @@ swiper-slide {
   @include media-breakpoint-up(md) {
     width: 128px;
   }
+}
+
+.img-email {
   @include media-breakpoint-up(lg) {
-    width: 100%;
+    width: 256px;
+  }
+}
+
+.img-donate {
+  @include media-breakpoint-up(lg) {
+    width: 224px;
   }
 }

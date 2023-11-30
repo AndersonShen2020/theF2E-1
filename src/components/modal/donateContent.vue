@@ -55,8 +55,9 @@ const getLocalNumber = (money) => {
             {{ plan.title }}
           </h3>
           <div class="d-flex align-items-center justify-content-end text-end">
-            <p class="mb-0 flex-grow-1">
-              NT$<span class="ms-2 fs-4 fw-bold">{{ getLocalNumber(plan.donateMoney) }}</span>
+            <p class="mb-0 flex-grow-1 d-flex align-items-center">
+              <span>NT$</span>
+              <span class="ms-2 fs-4 fw-bold">{{ getLocalNumber(plan.donateMoney) }}</span>
             </p>
             <p class="mb-0 fs-14 text-slate-500 modal-content-donate-number">
               已有 {{ getLocalNumber(plan.donateNumber) }} 人贊助

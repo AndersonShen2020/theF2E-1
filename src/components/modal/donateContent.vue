@@ -51,9 +51,9 @@ const getLocalNumber = (money) => {
         @click="selectPlan(plan.title)"
       >
         <div class="d-flex align-items-center">
-          <p class="flex-grow-1 fs-5 fw-bold mb-0 text-primary">
+          <h3 class="flex-grow-1 fs-5 fw-bold mb-0 text-primary">
             {{ plan.title }}
-          </p>
+          </h3>
           <div class="d-flex align-items-center justify-content-end text-end">
             <p class="mb-0 flex-grow-1">
               NT$<span class="ms-2 fs-4 fw-bold">{{ getLocalNumber(plan.donateMoney) }}</span>
@@ -69,7 +69,10 @@ const getLocalNumber = (money) => {
         :class="{ 'border-primary': selectedPlan === '自訂贊助金額' }"
         @click="selectPlan('自訂贊助金額')"
       >
-        自訂贊助金額
+        <h3 class="flex-grow-1 fs-5 fw-bold text-primary">自訂贊助金額</h3>
+        <div class="d-flex align-items-center bg-slate-100 rounded-3 modal-content-donate-number-custom">
+          <input type="number" class="bg-slate-100 border-0 text-slate-500 flex-grow-1" placeholder="輸入金額" />
+        </div>
       </li>
       <li>
         <button class="btn btn-primary rounded-pill text-white fw-semibold py-4 px-8 w-100">前往捐款</button>

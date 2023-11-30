@@ -297,3 +297,11 @@ $modal-left-content: 731px;
     width: 140px;
   }
 }
+
+.modal-content-donate-number-custom {
+  gap: 10px;
+  padding: 16px 15px;
+  &::before {
+    content: "NT$";
+  }
+}

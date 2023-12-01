@@ -1,6 +1,11 @@
 <script setup>
 import { ref } from "vue";
 
+// Store
+import { useModalStore } from "@/stores/modal";
+const modalStore = useModalStore();
+const { getModalController } = modalStore;
+
 const donationPlans = [
   {
     title: "喵星人之友",
@@ -18,6 +23,8 @@ const donationPlans = [
     donateNumber: 999
   }
 ];
+
+const isDonate = ref(false);
 
 const selectedPlan = ref(null);
 function selectPlan(title) {
@@ -41,7 +48,7 @@ const getLocalNumber = (money) => {
         <img class="modal-img-donate" src="@/assets/images/pictures/image 11.webp" alt="donate" />
       </div>
     </div>
-    <ul class="list-unstyled donate-content-right mb-0 d-flex flex-column gap-4">
+    <ul class="list-unstyled donate-content-right mb-0 d-flex flex-column gap-4" v-if="isDonate === false">
       <li><h2 class="mb-0 fs-5 fw-bold lh-base">捐款方案</h2></li>
       <li
         class="py-6 px-4 border border-2 rounded-4"
@@ -76,8 +83,23 @@ const getLocalNumber = (money) => {
         </div>
       </li>
       <li>
-        <button class="btn btn-primary rounded-pill text-white fw-semibold py-4 px-8 w-100">前往捐款</button>
+        <button class="btn btn-primary rounded-pill text-white fw-semibold py-4 px-8 w-100" @click="isDonate = true">
+          前往捐款
+        </button>
       </li>
     </ul>
+    <div
+      class="donate-content-right d-flex flex-column justify-content-center align-items-center gap-8"
+      v-if="isDonate === true"
+    >
+      <h3 class="fw-bold mb-0 lh-base">感謝您的捐款</h3>
+      <img class="w-35" src="@/assets/images/pictures/Group 15.webp" alt="thanks" />
+      <button
+        class="btn btn-slate-100 px-24 py-4 rounded-pill"
+        @click="getModalController.hideModal(), (isDonate = false)"
+      >
+        關閉
+      </button>
+    </div>
   </div>
 </template>

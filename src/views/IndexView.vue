@@ -222,7 +222,10 @@ function showModal() {
                 親愛的鄉親，每一位市民的意見都是我們社區前進的原動力
               </p>
               <div class="d-flex flex-fill justify-content-between align-items-center mt-6">
-                <button class="py-4 px-6 btn bg-white rounded-pill fw-semibold lh-base align-baseline">
+                <button
+                  class="py-4 px-6 btn bg-white rounded-pill fw-semibold lh-base align-baseline"
+                  @click="showModal(), setModalTitle('民眾服務信箱'), setCurrentComp('EmailContent')"
+                >
                   填寫表單<svg
                     class="donate-arrow-forward-icon ms-2 align-text-top"
                     width="22"

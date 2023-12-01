@@ -2,6 +2,7 @@
 import PolicyIssuesContent from "@/components/modal/PolicyIssuesContent.vue";
 import LatestEventsContent from "@/components/modal/LatestEventsContent.vue";
 import DonateContent from "@/components/modal/DonateContent.vue";
+import EmailContent from "@/components/modal/EmailContent.vue";
 import { ref, onMounted, onUpdated } from "vue";
 import { Modal } from "bootstrap";
 
@@ -19,7 +20,8 @@ let modal;
 const selectComp = {
   PolicyIssuesContent,
   LatestEventsContent,
-  DonateContent
+  DonateContent,
+  EmailContent
 };
 
 onMounted(() => {

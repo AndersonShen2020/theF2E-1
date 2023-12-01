@@ -37,15 +37,21 @@ const getLocalNumber = (money) => {
 
 <template>
   <div class="d-flex flex-lg-row flex-column gap-8 h-100">
-    <div class="d-flex flex-column donate-content-left p-10 bg-theme-2 rounded-24 h-100">
-      <h3 class="mb-4 fs-1 fw-bold lh-base text-primary ls-nega">
-        您的小筆捐款<br />
-        是每隻毛孩未來的大大動力！
-      </h3>
-      <p class="mb-0">目前小額贊助總金額</p>
-      <h3 class="mb-0 fs-2 fw-bold lh-base">987,655,873</h3>
-      <div class="d-flex justify-content-center align-items-center flex-grow-1">
-        <img class="modal-img-donate" src="@/assets/images/pictures/image 11.webp" alt="donate" />
+    <div class="d-flex flex-lg-column flex-row donate-content-left p-lg-10 p-6 bg-theme-2 rounded-24 h-lg-100">
+      <div>
+        <h3 class="mb-4 fs-lg-1 fs-6 fw-bold lh-base text-primary ls-lg-nega">
+          您的小筆捐款<br />
+          是每隻毛孩未來的大大動力！
+        </h3>
+        <p class="mb-0">目前小額贊助總金額</p>
+        <h3 class="mb-0 fs-lg-2 fs-5 fw-bold lh-base">987,655,873</h3>
+      </div>
+      <div class="d-flex justify-content-center align-items-center flex-grow-1 position-lg-static position-relative">
+        <img
+          class="modal-img-donate position-lg-static position-absolute"
+          src="@/assets/images/pictures/image 11.webp"
+          alt="donate"
+        />
       </div>
     </div>
     <ul class="list-unstyled donate-content-right mb-0 d-flex flex-column gap-4" v-if="isDonate === false">
@@ -57,7 +63,7 @@ const getLocalNumber = (money) => {
         :key="index"
         @click="selectPlan(plan.title)"
       >
-        <div class="d-flex align-items-center">
+        <div class="d-flex flex-lg-row flex-column align-items-lg-center gap-2">
           <h3 class="flex-grow-1 fs-5 fw-bold mb-0 text-primary">
             {{ plan.title }}
           </h3>

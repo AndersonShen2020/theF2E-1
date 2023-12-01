@@ -287,8 +287,16 @@ $modal-left-content: 731px;
 }
 
 .modal-img-donate {
+  left: -7px;
+  width: 95px;
+  @include media-breakpoint-up(md) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
   @include media-breakpoint-up(xl) {
+    left: 0;
     width: 336px;
+    transform: translateX(0);
   }
 }
 

@@ -196,7 +196,7 @@ function showModal() {
               <div class="d-flex justify-content-between align-items-center mt-6">
                 <button
                   class="py-4 px-6 btn bg-white rounded-pill fw-semibold lh-base align-baseline"
-                  @click="showModal(), setModalTitle('小額捐款'), setCurrentComp('donateContent')"
+                  @click="showModal(), setModalTitle('小額捐款'), setCurrentComp('DonateContent')"
                 >
                   小額捐款<svg
                     class="donate-arrow-forward-icon ms-2 align-text-top"

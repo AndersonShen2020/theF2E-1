@@ -313,3 +313,10 @@ $modal-left-content: 731px;
     content: "NT$";
   }
 }
+
+.modal-img-email {
+  width: 206.5px;
+  @include media-breakpoint-up(xl) {
+    width: 100%;
+  }
+}

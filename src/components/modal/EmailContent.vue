@@ -12,16 +12,20 @@ const isEmail = ref(false);
 <template>
   <div class="d-flex flex-lg-row flex-column gap-8 h-100">
     <div
-      class="d-flex flex-lg-column flex-row donate-content-left py-lg-16 px-lg-10 p-6 bg-email rounded-24 h-lg-100 position-relative"
+      class="d-flex flex-lg-column flex-row donate-content-left py-md-16 px-md-10 p-6 bg-email rounded-24 h-lg-100 position-relative overflow-hidden"
     >
       <div>
-        <h3 class="mb-4 fs-lg-1 fs-6 fw-bold lh-base text-primary ls-lg-nega">
+        <h3 class="mb-4 fs-lg-1 fs-6 fw-bold lh-base ls-lg-nega">
           分享您的想法<br />
-          一同為我們的未來打造更美好！
+          一同為我們的未來<br class="d-md-none d-inline" />打造更美好！
         </h3>
       </div>
       <div class="d-flex justify-content-center align-items-end flex-grow-1">
-        <img class="w-100 position-absolute bottom-0" src="@/assets/images/pictures/image 10.webp" alt="email" />
+        <img
+          class="modal-img-email position-absolute bottom-0 end-0 object-fit-cover"
+          src="@/assets/images/pictures/image 10.webp"
+          alt="email"
+        />
       </div>
     </div>
     <form class="donate-content-right mb-0 d-flex flex-column gap-6" v-if="isEmail === false">

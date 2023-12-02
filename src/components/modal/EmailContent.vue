@@ -45,7 +45,7 @@ const isEmail = ref(false);
         <label for="suggestions" class="form-label fs-5 fw-bold">您的建言</label>
         <textarea
           type="suggestions"
-          class="form-control bg-slate-100 fs-18"
+          class="form-control bg-slate-100 fs-18 resize-none"
           id="suggestions"
           rows="6"
           placeholder="輸入內容"

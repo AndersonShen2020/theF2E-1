@@ -1,7 +1,7 @@
 <script setup>
 import PolicyIssues from "@/components/PolicyIssuesComponent.vue";
 import Modal from "@/components/ModalTemplate.vue";
-import { ref, computed, onMounted, watch } from "vue";
+import { ref, watch } from "vue";
 
 // Store
 import { useModalStore } from "@/stores/modal";
@@ -42,7 +42,7 @@ function showModal() {
         </div>
         <div class="mt-lg-6 mt-4">
           <div class="d-flex justify-content-center">
-            <img class="w-75" src="../assets/images/pictures/image 12.webp" alt="" />
+            <img class="w-75" src="@/assets/images/pictures/image 12.webp" alt="" />
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@ function showModal() {
             </div>
             <img
               class="img-fluid object-fit-cover rounded-end-lg-5 rounded-bottom-5 w-lg-50 w-auto"
-              src="../assets/images/pictures/image 8.webp"
+              src="@/assets/images/pictures/image 8.webp"
               alt="advocate"
             />
           </div>
@@ -105,7 +105,7 @@ function showModal() {
             <div class="card border-0">
               <img
                 class="img-fluid object-fit-cover rounded-4 img-event"
-                src="../assets/images/pictures/event-1.webp"
+                src="@/assets/images/pictures/event-1.webp"
                 alt="參與台北寵物論壇，爭取貓咪友善環境"
               />
               <div class="card-body p-0">
@@ -124,7 +124,7 @@ function showModal() {
                 <div class="d-flex flex-row border-0">
                   <img
                     class="me-4 img-fluid object-fit-cover rounded-4 img-event-list"
-                    src="../assets/images/pictures/event-2.webp"
+                    src="@/assets/images/pictures/event-2.webp"
                     alt="掃街模式開啟！帶著你的貓耳，來和我一起走！"
                   />
                   <div class="p-0 event-box">
@@ -140,7 +140,7 @@ function showModal() {
                 <div class="d-flex flex-row border-0">
                   <img
                     class="me-4 img-fluid object-fit-cover rounded-4 img-event-list"
-                    src="../assets/images/pictures/event-3.webp"
+                    src="@/assets/images/pictures/event-3.webp"
                     alt="收容所模特兒大比拼！"
                   />
                   <div class="p-0 event-box">
@@ -156,7 +156,7 @@ function showModal() {
                 <div class="d-flex flex-row border-0">
                   <img
                     class="me-4 img-fluid object-fit-cover rounded-4 img-event-list"
-                    src="../assets/images/pictures/event-1.webp"
+                    src="@/assets/images/pictures/event-1.webp"
                     alt="參與台北寵物論壇，爭取貓咪友善環境"
                   />
                   <div class="p-0 event-box">

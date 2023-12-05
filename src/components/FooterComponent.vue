@@ -1,4 +1,3 @@
-<script setup></script>
 <template>
   <footer>
     <div class="py-16 bg-theme-2">

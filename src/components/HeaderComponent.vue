@@ -1,4 +1,3 @@
-<script setup></script>
 <template>
   <header>
     <div class="container-fluid position-md-fixed position-static z-3">

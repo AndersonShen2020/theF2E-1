@@ -3,7 +3,7 @@ import PolicyIssuesContent from "@/components/modal/PolicyIssuesContent.vue";
 import LatestEventsContent from "@/components/modal/LatestEventsContent.vue";
 import DonateContent from "@/components/modal/DonateContent.vue";
 import EmailContent from "@/components/modal/EmailContent.vue";
-import { ref, onMounted, onUpdated } from "vue";
+import { ref, onMounted } from "vue";
 import { Modal } from "bootstrap";
 
 // 驅動 Store 的方法
@@ -57,5 +57,3 @@ defineExpose({
     </div>
   </div>
 </template>
-
-<style lang="scss"></style>

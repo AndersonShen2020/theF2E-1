@@ -130,9 +130,9 @@ onMounted(() => {
           </swiper-slide>
         </swiper-container>
         <div class="d-flex justify-content-center align-items-center gap-4">
-          <div class="swiper-prev-button"><img src="../assets/images/pictures/button-prev.svg" alt="" /></div>
+          <div class="swiper-prev-button"><img src="@/assets/images/pictures/button-prev.svg" alt="" /></div>
           <div class="swiper-pagination d-flex gap-4"></div>
-          <div class="swiper-next-button"><img src="../assets/images/pictures/button-next.svg" alt="" /></div>
+          <div class="swiper-next-button"><img src="@/assets/images/pictures/button-next.svg" alt="" /></div>
         </div>
       </div>
     </div>

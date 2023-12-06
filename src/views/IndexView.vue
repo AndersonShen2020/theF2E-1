@@ -1,12 +1,26 @@
 <script setup>
 import PolicyIssues from "@/components/PolicyIssuesComponent.vue";
 import Modal from "@/components/ModalTemplate.vue";
-import { ref, watch } from "vue";
+import { ref, watch, onMounted } from "vue";
+
+// AOS.js
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Store
 import { useModalStore } from "@/stores/modal";
 const modalStore = useModalStore();
 const { setModalController, setModalTitle, setCurrentComp } = modalStore;
+
+// AOS.js
+onMounted(() => {
+  AOS.init({
+    duration: 1500,
+    once: true,
+    delay: 300,
+    easing: "ease"
+  });
+});
 
 // Modal
 const modalComp = ref(null);
@@ -23,11 +37,19 @@ function showModal() {
   <div class="container">
     <div class="banner" id="1">
       <div class="d-flex flex-column justify-content-center">
-        <h3 class="bg-primary-gradient text-center font-mantou text-clip pt-lg-24 pt-8 mlh-slogan lh-105">
+        <h3
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          class="bg-primary-gradient text-center font-mantou text-clip pt-lg-24 pt-8 mlh-slogan lh-105"
+        >
           台灣的明天 <br class="d-lg-none d-inline" />
           喵先鋪路
         </h3>
-        <div class="d-flex flex-md-row flex-column justify-content-center align-items-center mt-4">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1600"
+          class="d-flex flex-md-row flex-column justify-content-center align-items-center mt-4"
+        >
           <h3 class="lh-1 py-3 px-4 me-4 mb-0 border rounded-4 text-white fw-bold bg-slate-700 mlh-job">
             2024 立委參選人
           </h3>
@@ -40,7 +62,7 @@ function showModal() {
             <p class="mb-0 text-primary fw-bold mlh-mainchar">喵立翰 Miao Li-Han</p>
           </h1>
         </div>
-        <div class="mt-lg-6 mt-4">
+        <div data-aos="fade-up" data-aos-duration="1700" class="mt-lg-6 mt-4">
           <div class="d-flex justify-content-center">
             <img class="w-75" src="@/assets/images/pictures/image 12.webp" alt="" />
           </div>
@@ -62,7 +84,10 @@ function showModal() {
       <div class="py-10">
         <div class="container">
           <div class="bg-white d-flex flex-lg-row flex-column gap-lg-6 rounded-5">
-            <div class="rounded-start-5 py-lg-16 px-lg-10 py-10 px-6 d-flex flex-column gap-8">
+            <div
+              data-aos="zoom-out-right"
+              class="rounded-start-5 py-lg-16 px-lg-10 py-10 px-6 d-flex flex-column gap-8"
+            >
               <div class="d-flex flex-column align-items-center">
                 <p class="mb-0 fw-bold text-white bg-slate-700 py-2 px-3 rounded-3">ADVOCATE</p>
                 <h2 class="font-mantou bg-primary-gradient text-clip display-3 fw-normal lh-base mb-0 sub-title">
@@ -83,6 +108,7 @@ function showModal() {
               </p>
             </div>
             <img
+              data-aos="zoom-out-left"
               class="img-fluid object-fit-cover rounded-end-lg-5 rounded-bottom-5 w-lg-50 w-auto"
               src="@/assets/images/pictures/image 8.webp"
               alt="advocate"
@@ -101,7 +127,7 @@ function showModal() {
           <h2 class="font-mantou bg-primary-gradient text-clip display-3 fw-normal lh-base mb-0 sub-title">最新活動</h2>
         </div>
         <div class="d-flex flex-lg-row flex-column gap-6 mt-lg-16 mt-10">
-          <div class="w-lg-50 w-100">
+          <div data-aos="fade-right" class="w-lg-50 w-100">
             <div class="card border-0">
               <img
                 class="img-fluid object-fit-cover rounded-4 img-event"
@@ -120,7 +146,7 @@ function showModal() {
           </div>
           <div class="w-lg-50 w-100">
             <ul class="list-unstyled mb-0">
-              <li class="mb-6">
+              <li data-aos="fade-up" class="mb-6">
                 <div class="d-flex flex-row border-0">
                   <img
                     class="me-4 img-fluid object-fit-cover rounded-4 img-event-list"
@@ -136,7 +162,7 @@ function showModal() {
                   </div>
                 </div>
               </li>
-              <li class="mb-6">
+              <li data-aos="fade-up" class="mb-6">
                 <div class="d-flex flex-row border-0">
                   <img
                     class="me-4 img-fluid object-fit-cover rounded-4 img-event-list"
@@ -152,7 +178,7 @@ function showModal() {
                   </div>
                 </div>
               </li>
-              <li class="mb-6">
+              <li data-aos="fade-up" class="mb-6">
                 <div class="d-flex flex-row border-0">
                   <img
                     class="me-4 img-fluid object-fit-cover rounded-4 img-event-list"
@@ -189,7 +215,7 @@ function showModal() {
     <div class="py-lg-10 py-0">
       <div class="container">
         <div class="row g-6">
-          <div class="col-md-6 col-12">
+          <div data-aos="fade-right" class="col-md-6 col-12">
             <div class="p-lg-24 py-10 px-6 rounded-5 bg-primary d-flex flex-column">
               <h2 class="mb-0 font-mantou second-title text-white">小額支持喵喵</h2>
               <p class="mb-0 fw-semibold fs-lg-5 fs-6 text-white">您的小筆捐款，是每隻毛孩未來的大大動力！</p>
@@ -215,7 +241,7 @@ function showModal() {
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-12">
+          <div data-aos="fade-left" class="col-md-6 col-12">
             <div class="p-lg-24 py-10 px-6 rounded-5 bg-slate-700 d-flex flex-column h-100">
               <h2 class="mb-0 font-mantou second-title text-white">民眾服務信箱</h2>
               <p class="mb-0 fw-semibold fs-lg-5 fs-6 text-white">

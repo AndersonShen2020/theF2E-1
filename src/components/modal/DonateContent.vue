@@ -24,14 +24,30 @@ const donationPlans = [
   }
 ];
 
+const totalDonatePrice = ref(987655873);
+const donatePrice = ref(0);
+const customDonatePrice = ref();
 const isDonate = ref(false);
 
 const selectedPlan = ref(null);
+
+const init = () => {
+  isDonate.value = true;
+  donatePrice.value = 0;
+  selectedPlan.value = null;
+};
+
 function selectPlan(title) {
   selectedPlan.value = title;
 }
-const getLocalNumber = (money) => {
-  return money.toLocaleString("en-US");
+
+const addDonatePrice = () => {
+  if (selectedPlan.value === "自訂贊助金額") {
+    totalDonatePrice.value += customDonatePrice.value;
+  } else {
+    totalDonatePrice.value += donatePrice.value;
+  }
+  init();
 };
 </script>
 
@@ -44,7 +60,7 @@ const getLocalNumber = (money) => {
           是每隻毛孩未來的大大動力！
         </h3>
         <p class="mb-0">目前小額贊助總金額</p>
-        <h3 class="mb-0 fs-lg-2 fs-5 fw-bold lh-base">987,655,873</h3>
+        <h3 class="mb-0 fs-lg-2 fs-5 fw-bold lh-base">{{ totalDonatePrice.toLocaleString("en-US") }}</h3>
       </div>
       <div class="d-flex justify-content-center align-items-center flex-grow-1 position-lg-static position-relative">
         <img
@@ -61,7 +77,7 @@ const getLocalNumber = (money) => {
         :class="{ 'border-primary': selectedPlan === plan.title }"
         v-for="(plan, index) in donationPlans"
         :key="index"
-        @click="selectPlan(plan.title)"
+        @click="selectPlan(plan.title), (donatePrice = plan.donateMoney)"
       >
         <div class="d-flex flex-lg-row flex-column align-items-lg-center gap-2">
           <h3 class="flex-grow-1 fs-5 fw-bold mb-0 text-primary">
@@ -70,10 +86,10 @@ const getLocalNumber = (money) => {
           <div class="d-flex align-items-center justify-content-end text-end">
             <p class="mb-0 flex-grow-1 d-flex align-items-center">
               <span>NT$</span>
-              <span class="ms-2 fs-4 fw-bold">{{ getLocalNumber(plan.donateMoney) }}</span>
+              <span class="ms-2 fs-4 fw-bold">{{ plan.donateMoney.toLocaleString("en-US") }}</span>
             </p>
             <p class="mb-0 fs-14 text-slate-500 modal-content-donate-number">
-              已有 {{ getLocalNumber(plan.donateNumber) }} 人贊助
+              已有 {{ plan.donateNumber.toLocaleString("en-US") }} 人贊助
             </p>
           </div>
         </div>
@@ -85,11 +101,16 @@ const getLocalNumber = (money) => {
       >
         <h3 class="flex-grow-1 fs-5 fw-bold text-primary">自訂贊助金額</h3>
         <div class="d-flex align-items-center bg-slate-100 rounded-3 modal-content-donate-number-custom">
-          <input type="number" class="bg-slate-100 border-0 text-slate-500 flex-grow-1" placeholder="輸入金額" />
+          <input
+            type="number"
+            class="bg-slate-100 border-0 text-slate-500 flex-grow-1"
+            placeholder="輸入金額"
+            v-model="customDonatePrice"
+          />
         </div>
       </li>
       <li>
-        <button class="btn btn-primary rounded-pill text-white fw-semibold py-4 px-8 w-100" @click="isDonate = true">
+        <button class="btn btn-primary rounded-pill text-white fw-semibold py-4 px-8 w-100" @click="addDonatePrice()">
           前往捐款
         </button>
       </li>
